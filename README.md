@@ -137,6 +137,15 @@ git clone https://github.com/antgroup/LLMOPT.git
 cd LLMOPT
 ```
 
+**Attention**: `Pyomo` is a modeling language, you should alse install the solvers to execute the `Pyomo` code! 
+
+For example, install some open-source solvers:
+
+```bash
+pip install pyomo
+conda install -c conda-forge glpk coincbc ipopt scip pulp
+```
+
 ### User Case 1: SFT training
 
 The hyperparameter setting and method for our Multi-Instruction Supervised Fine-Tuning(MISFT):
